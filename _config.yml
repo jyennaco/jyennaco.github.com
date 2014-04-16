@@ -24,7 +24,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://jyennaco.github.io
+production_url : http://joeyennaco.com
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -129,3 +129,9 @@ JB :
   
   # Updating so Jekyll will use kramdown instead of Maruku
   markdown: kramdown
+  
+  # Adding jekyll mentions to link to user's github pages
+  # Adding emoji capability
+  gems:
+  - jekyll-mentions
+  - jemoji

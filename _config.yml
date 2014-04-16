@@ -2,6 +2,15 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
 
+# Updating so Jekyll will use kramdown instead of Maruku
+markdown: kramdown
+
+# Adding jekyll mentions to link to user's github pages
+# Adding emoji capability
+gems:
+- jekyll-mentions
+- jemoji
+
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 pygments: true
 
@@ -126,12 +135,3 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-  
-  # Updating so Jekyll will use kramdown instead of Maruku
-  markdown: kramdown
-  
-  # Adding jekyll mentions to link to user's github pages
-  # Adding emoji capability
-  gems:
-  - jekyll-mentions
-  - jemoji
